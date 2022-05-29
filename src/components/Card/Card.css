@@ -1,0 +1,99 @@
+.container--card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-left: 4px solid #e9ecef;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.verde {
+  border-left: 4px solid #03b898;
+}
+
+.card--esquerda {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  align-items: flex-start;
+}
+
+.card--direita {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.description {
+  margin-top: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: initial;
+}
+
+.type {
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: initial;
+}
+
+.value {
+  margin-top: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: end;
+}
+
+.button {
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #acacac;
+}
+
+@media screen and (min-width: 700px) {
+  .card--direita {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 35%;
+    height: 80px;
+    margin-top: 30px;
+  }
+  .description {
+    font-size: 16px;
+  }
+
+  .type {
+    font-size: 12px;
+  }
+
+  .value {
+    margin-top: 2.5px;
+    font-size: 12px;
+  }
+
+  .button {
+    width: 22px;
+    height: 22px;
+  }
+}

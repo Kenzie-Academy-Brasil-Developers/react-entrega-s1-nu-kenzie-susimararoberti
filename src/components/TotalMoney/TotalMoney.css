@@ -1,0 +1,59 @@
+.money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  border-radius: 2px;
+}
+
+.container--money {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  font-family: "Nunito", sans-serif;
+}
+
+.money--total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.total--texto {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.total--valor {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fd377e;
+}
+
+.money--texto {
+  font-size: 10px;
+  text-align: initial;
+  color: #5b6166;
+}
+
+@media screen and (min-width: 700px) {
+  .total--texto {
+    font-size: 16px;
+  }
+
+  .total--valor {
+    font-size: 16px;
+  }
+
+  .money--texto {
+    font-size: 12px;
+  }
+}

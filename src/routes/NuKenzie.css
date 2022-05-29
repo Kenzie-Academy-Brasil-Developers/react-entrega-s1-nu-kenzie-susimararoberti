@@ -1,0 +1,188 @@
+.Header--NuKenzie {
+  background-color: #f8f9fa;
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0px 2px 3px rgba(187, 187, 187, 0.25);
+}
+
+.Header--logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.Header--logo h1 {
+  color: #fd377e;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.Header--logo h2 {
+  color: black;
+  font-size: 20px;
+}
+
+.Header--button {
+  margin-right: 10%;
+  background-color: #e9ecef;
+  color: #5b6166;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+.Header--button:hover {
+  background-color: #fd377e;
+  color: white;
+  transition: 0.5s;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 10% 0 10%;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 10% 0 10%;
+  font-family: "Nunito", sans-serif;
+}
+
+.resumo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.resumo--titulo {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212529;
+  text-align: initial;
+}
+
+.resumo--buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
+.resumo--buttons button {
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  height: 28px;
+  color: #5b6166;
+  border: none;
+  border-radius: 5px;
+  background-color: #e9ecef;
+
+  cursor: pointer;
+}
+
+.resumo--button--todos {
+  width: 30%;
+}
+.resumo--button--entrada {
+  width: 30%;
+}
+.resumo--button--saída {
+  width: 30%;
+}
+
+.card--vazio {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212529;
+  width: 100%;
+  text-align: initial;
+}
+
+@media screen and (min-width: 700px) {
+  .Header--NuKenzie {
+    height: 14vh;
+  }
+  .Header--logo h1 {
+    font-size: 25px;
+  }
+  .Header--logo h2 {
+    font-size: 25px;
+  }
+  .Header--button {
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  main {
+    display: flex;
+  }
+  .form {
+    margin: 5% 5% 0 10%;
+    width: 40%;
+  }
+  .lista {
+    margin: 5% 10% 0 0;
+    width: 60%;
+  }
+  .resumo {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .resumo--titulo {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .resumo--buttons {
+    width: 50%;
+  }
+  .resumo--buttons button {
+    height: 32px;
+  }
+  .resumo--button--entrada {
+    width: 35%;
+  }
+  .card--vazio {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .resumo--button--todos {
+    width: 30%;
+  }
+  .resumo--button--entrada {
+    width: 30%;
+  }
+  .resumo--button--saída {
+    width: 30%;
+  }
+  .resumo--buttons button {
+    font-size: 14px;
+  }
+}
+
+.ativo {
+  background-color: #fd377e !important;
+  color: #fff !important;
+}

@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 2px;
+}
+
+.container--formulario {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  font-family: "Inter", sans-serif;
+}
+
+.container--formulario p {
+  font-size: 10px;
+  text-align: initial;
+}
+
+.formulario--descricao {
+  width: calc(100% - 12px);
+  height: 35px;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.formulario--descricao::placeholder {
+  color: #868e96;
+  font-size: 12px;
+}
+
+.formulario--exemplo {
+  margin-top: 5px;
+  font-size: 10px;
+  text-align: initial;
+  color: #868e96;
+}
+
+.formulario--div {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario--valor {
+  width: calc(100% - 12px);
+  height: 35px;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding-left: 10px;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.formulario--valor::placeholder {
+  color: #868e96;
+  padding-left: 90%;
+  font-size: 12px;
+}
+
+.formulario--opcoes {
+  width: 100%;
+  height: 35px;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  color: #5b6166;
+  padding-left: 5px;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.formulario--button {
+  background-color: #fd377e;
+  border: none;
+  margin: 15px 0;
+  color: white;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  height: 35px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario--button:hover {
+  background-color: pink;
+  color: #fd377e;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 700px) {
+  .container--formulario p {
+    font-size: 12px;
+  }
+
+  .formulario--descricao {
+    height: 40px;
+  }
+  .formulario--descricao::placeholder {
+    font-size: 16px;
+  }
+  .formulario--exemplo {
+    font-size: 12px;
+  }
+  .formulario--div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .div--valor {
+    width: 45%;
+  }
+  .formulario--valor {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+  }
+  .div--opcoes {
+    width: 45%;
+  }
+  .formulario--opcoes {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+  }
+  .formulario--button {
+    font-size: 16px;
+  }
+}
